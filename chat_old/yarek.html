@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel='stylesheet' href='css/main.css' />
+
+<script src="jquery-1.11.0.min.js"type="text/javascript"></script>
+<script>
+// input room name
+    var myuser = {};
+    var hisuser = {};
+    var users = {};
+    myuser.username = "yarek";
+    myuser.role = "A";
+    myuser.room = myuser.username;
+
+</script>
+<script src='socket.io/socket.io.js'></script>
+    
+
+</head>
+
+<body>
+
+
+    <div id='container'>
+        <div id="header">
+            <img style="margin-top: 10px" src="assets/images/userBrown.png">
+            <span id="spanUser"></span>
+            <span id="spanTimer"></span>
+        </div>
+        <div id='videos'>
+            <video id="localVideo" autoplay></video>
+            <video id="remoteVideo" autoplay></video>
+        </div>
+        <div id="footer">
+            <div id="closeBtn" title="close" ></div>
+            <div id="muteMicro" title="Mute" data-checked=0></div>
+            <div id="volumeBtn" title="Volume" data-checked=0></div>
+        </div>
+
+    </div>
+
+
+
+    <script src='adapter.js'></script>
+    <script src='main.js'></script>
+
+</body>
+<script type="text/javascript">
+    $(function() {
+        init();                
+    });
+</script>
+
+</html>

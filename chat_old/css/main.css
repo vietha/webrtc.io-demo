@@ -1,0 +1,132 @@
+html {
+        color: white;
+        background-color: #CCC;
+        font-size: 20px;
+    }
+    #container {
+        width: 800px;
+        height: 640px;
+        margin: auto;
+        position: relative;
+        border:1px solid #666;
+        box-shadow: 2px 2px 8px #666;
+
+    }    
+    #header {
+        position: absolute;
+        top:0px;
+        height: 50px;
+        background-color: #b29684;
+        width: 100%;
+
+    }
+    #footer {
+        position: absolute;
+        bottom:0px;
+        height: 50px;
+        background-color: #c2b025;
+        width: 100%;
+        line-height: 50px;
+
+    }
+
+    #localVideo {
+        width: 160px;
+        height: 120px;
+        position: absolute;
+        right: 0px;
+        bottom: 50px;
+        border: 2px solid #c2b025;
+        display: none;
+    }
+    #remoteVideo {
+        width: 100%;
+        height: 100%;
+
+    }
+    #listUsers {
+        position: absolute;
+        left: 100px;
+        top:100px;
+        right:100px;
+        bottom: 100px;
+        border: 1px solid #888;
+        background-color: #CCC;
+
+    }
+    .itemRenderer {
+        border: 1px solid #888;
+        padding: 5px;
+        background-color: #BBB;
+    }
+    .startBtn {
+        background-color: #900;
+        color: #FFF;
+        border: none;
+        width: 90px;
+        font-size: 17px;
+        cursor: pointer;        
+    }
+    .cancelBtn {
+        background-color: #080;
+        color: #FFF;
+        border: none;
+        width: 90px;
+        font-size: 17px;
+        cursor: pointer;        
+    }
+    .waiting {
+        font-size: 1.2em;
+        color: white;
+        text-align: center;
+        margin-top: 35%;
+    }
+    .answerCall {
+        color: white;
+        text-align: center;
+        margin-top: 35%;        
+    }
+    #answerCallBtn {
+        background-color: #00FF00;
+        border: 1px solid #FFF;
+        font-size: 1.2em;
+        padding: 10px;
+        color: #FFF;
+        border-radius: 8px;   
+        cursor: pointer;     
+    }
+    #spanTimer{
+        padding-left: 20px;
+    }
+    #closeBtn {
+        position: absolute;
+        width:34px;
+        height: 35px;
+        cursor:pointer;
+        background-image: url("../assets/images/close.png");
+        margin-left: 8px;
+        margin-top: 8px;        
+
+    }
+    #closeBtn:hover {
+       background-image: url("../assets/images/close_over.png"); 
+    }
+    #muteMicro {
+        position: absolute;
+        width:34px;
+        height: 35px;
+        cursor:pointer;
+        background-image: url("../assets/images/micro1.png");
+        margin-left: 45%;
+        margin-top: 8px; 
+    }
+    #volumeBtn {
+        position: absolute;
+        width:34px;
+        height: 35px;
+        cursor:pointer;
+        background-image: url("../assets/images/sound.png");
+        margin-left: 55%;
+        margin-top: 8px; 
+    }    
+    

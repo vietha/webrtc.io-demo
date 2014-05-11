@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo webrtc chat</title>
+		<!--link type="text/css" href="/style.css" rel="stylesheet"></link-->
+		<link rel='stylesheet' href='css/main.css' />
+		<script src="/webrtc.io.js"></script>
+		<script src="js/jquery-1.11.0.min.js"type="text/javascript"></script>
+		<script>
+			// input room name
+			var myuser = {};
+			var hisuser = {};
+			var users = {};
+			myuser.username = "esther";
+			myuser.role = "B";
+			myuser.room = "yarek";
+		</script>	
+	</head>
+	<body onload="init()">
+		<div id='container'>
+			<div id="header">
+				<img style="margin-top: 10px" src="assets/images/userBrown.png">
+				<span id="spanUser"></span>
+				<span id="spanTimer"></span>
+			</div>
+			<div id='videos'>
+				<video id="you" class="flip" autoplay width="160" height="120" style="position: absolute; right: 0px; bottom: 50px; border: 2px solid #c2b025; display: none;">
+				</video>
+				<video id="remoteVideo" autoplay></video>
+			</div>
+			<div id="footer">
+				<div id="closeBtn" title="close" ></div>
+				<div id="muteMicro" title="Mute" data-checked=0></div>
+				<div id="volumeBtn" title="Volume" data-checked=0></div>
+			</div>
+		</div>
+	<script src="/script.js"></script>
+	</body>   
+</html>
